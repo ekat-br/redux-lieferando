@@ -21,11 +21,10 @@ export default function MealsList() {
 
     return(
         <Container>
-            <h1>Order your favorite meal</h1>
-            <h2>Meals List</h2>
+            <Title>Order your favorite meal</Title>
             <>
                 {data.meals.slice(0,visibleMeals).map((meal) => <MealsCard meal={meal}/>)}
-                <button onClick={handleShowMoreMeals} disabled={visibleMeals>= data.meals.length}>Show more meals</button>
+                <Button onClick={handleShowMoreMeals} disabled={visibleMeals>= data.meals.length}>Show more meals</Button>
             </>
         </Container>
     )
@@ -33,6 +32,22 @@ export default function MealsList() {
 
 }
 
+const Title = styled.h2`
+color: #013378;
+`
+
 const Container = styled.div`
 text-align: center; 
+`
+const Button = styled.button`
+background-color: #1D3557;
+color: #F1FAEE;
+border: none; 
+border-radius: 4px;
+padding: 8px 16px;
+margin: 20px auto;
+
+&:hover{
+    background-color: #013378;
+}
 `

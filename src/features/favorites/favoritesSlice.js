@@ -20,6 +20,6 @@ export const favoritesSlice = createSlice({
 
 export const { toggledFavoriteMeal } = favoritesSlice.actions
 
-export const favoriteMealIds = (state) => state.favorites.favoriteMealIds;
+export const selectFavoriteMealIds = (state) => state.favorites.favoriteMealIds;
 
 export default favoritesSlice.reducer

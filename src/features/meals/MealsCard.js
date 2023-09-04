@@ -14,15 +14,26 @@ export default function MealsCard({meal}){
 }
 
 const Container = styled.div`
-text-align: center; 
 background-color: pink; 
+border-radius: 4px; 
+margin: 50px auto;
+max-width: 500px;
+height: auto;
+background-color: #F1FAEE;
+padding: 20px auto;
 `
-const MealTitle = styled.h3`
-color: lightblue; 
+const MealTitle = styled.h2`
+color: #E63946; 
+margin-top: 20px;
+font-wright: 200;
 `
 const MealImage = styled.img`
-max-width: 100%
+display: block;
+max-width: 100%;
+height: auto;
 `
 const MealType = styled.span`
-color: blue; 
+color: #457B9D; 
+font-weight: bold;
+display: block;
 `
