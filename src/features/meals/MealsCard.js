@@ -1,14 +1,16 @@
 import { styled } from "styled-components";
 import FavoriteButton from "../favorites/FavoriteButton";
+import ToppingButton from "../toppings/ToppingButton";
 export default function MealsCard({meal}){
 
-    const {strMeal, strMealThumb, strArea} = meal;
+    const {strMeal, strMealThumb, strArea, idMeal} = meal;
     return(
         <Container>
             <MealTitle>{strMeal}</MealTitle>
             <MealImage src={strMealThumb}/>
             <MealType>Origin: {strArea}</MealType>
             <FavoriteButton meal={meal}/>
+            <ToppingButton mealId={idMeal}/>
         </Container>
     );
 }

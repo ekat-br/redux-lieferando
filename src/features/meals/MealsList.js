@@ -23,7 +23,7 @@ export default function MealsList() {
         <Container>
             <Title>Order your favorite meal</Title>
             <>
-                {data.meals.slice(0,visibleMeals).map((meal) => <MealsCard meal={meal}/>)}
+                {data.meals.slice(0,visibleMeals).map((meal) => <MealsCard meal={meal} key={meal.idMeal}/>)}
                 <Button onClick={handleShowMoreMeals} disabled={visibleMeals>= data.meals.length}>Show more meals</Button>
             </>
         </Container>
