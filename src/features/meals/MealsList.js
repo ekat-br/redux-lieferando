@@ -38,6 +38,7 @@ color: #013378;
 
 const Container = styled.div`
 text-align: center; 
+margin-top: 50px;
 `
 const Button = styled.button`
 background-color: #1D3557;

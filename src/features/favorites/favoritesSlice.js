@@ -13,6 +13,7 @@ export const favoritesSlice = createSlice({
         }else{
              state.favoriteMealIds.push(idToToggle);
         }
+        localStorage.setItem('favorites', JSON.stringify(state.favorites))
     
     },
     },
